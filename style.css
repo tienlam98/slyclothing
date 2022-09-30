@@ -1,0 +1,199 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --black: #000000;
+    --nav: #f1f1f1;
+    --white: #ffffff;
+    --bg: #777777;
+    --gray: #cecece;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    background-color: var(--nav);
+    font-weight: 500;
+    padding: 0;
+
+}
+#header-logo {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 1rem; 
+    max-width: 5rem;
+}
+.nav__menu-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    font-size: 0.8rem;
+    width: 50%;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+.header-button {
+    display: flex;
+    justify-content: space-between;
+}
+.register {
+    font-size: 0.8rem;
+    display: block;
+    padding: 2px 20px;
+}
+.carousel {
+    position: relative;
+    height: 50%;
+}
+.notice {
+    text-align: center;
+    height: 3rem;
+    background: black;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-top: 0.5rem;
+}
+.tshirt-section-img {
+    width: 100%;
+}
+.main-section-product {
+    display: flex;
+    justify-content: space-around;
+}
+.shirt-img {
+    width: 13rem;
+    margin-top: 2rem;
+}
+.products > a {
+
+}
+.btn-light {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    font-weight: 500;
+    background-color: var(--white);
+    border: 2px solid var(--black);
+    border-radius: 0;
+    margin-bottom: 3rem;
+
+}
+.gift-package-service > img {
+    width: 100%;
+}
+.foot-img {
+    display: block;
+    margin: 0 auto;
+    width: 96%;
+    height: 25rem;
+}
+.service {
+    display: block;
+    margin: 0 auto;
+    width: 100%; 
+}
+.introduction {
+    background-color: var(--gray);
+    text-align: left;
+}
+.introduction-container {
+    padding: 2rem 12rem 1rem;
+}
+.introduction-title {
+    color: tomato;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.introduction p {
+    color: var(--bg);
+    font-size: 0.9rem;
+    padding-top: 1rem;
+    font-weight: 400;
+}
+
+.footer-menu {
+    display: flex;
+    color: white;
+    font-size: 0.7rem;
+    background-color: var(--black);
+}
+.footer-menu h6 {
+    color: tomato;
+    font-size: 0.9rem;
+}
+.foot-menu-logo {
+    padding: 3rem 2rem 0 5rem;
+}
+.footer-menu a {
+    text-decoration: none;
+    color: white;
+}
+.foot-menu-logo {
+}
+.foot-menu-logo img {
+    width: 5rem;
+    height: 2rem;
+}
+.footer-chinh-sach {
+    padding: 3rem 3rem 0 2rem;
+}
+.footer-chinh-sach a {
+    display: block;
+    line-height: 1.5rem;
+}
+.footer-chinh-sach-item {
+    padding: 1rem;
+}
+.footer-huong-dan {
+    padding: 3rem 1rem 0;
+}
+.footer-huong-dan a {
+    display: block;
+    line-height: 1.5rem
+}
+.footer-huong-dan-item {
+    padding: 1rem;
+}
+.footer-cong-dong {
+    padding: 3rem 3rem 0 5rem;
+}
+.social-media {
+    display: flex;
+}
+.social-media a {
+    display: inline-block;
+    border-radius: 50px;
+    font-size: 1rem;
+    padding-right: 1rem;
+}
+.footer-cong-dong img {
+    padding-top: 1rem;
+    width: 60%;
+}
+.footer-address {
+    background-color: var(--black);
+    color: var(--white);
+    text-align: center;
+    font-size: 0.7rem;
+    padding-bottom: 1rem;
+}
+.footer-address p {
+    margin: 0;
+}
+.footer-copyright {
+    background-color: var(--bg);
+    color: var(--white);
+    padding-top: 0.6rem;
+    padding-left: 0.8rem;
+    height: 2.5rem;
+    font-size: 0.8rem;
+}
