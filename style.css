@@ -1,3 +1,5 @@
+@import url('./header.css');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,46 +11,12 @@
     --white: #ffffff;
     --bg: #777777;
     --gray: #cecece;
+    --red: #f40000;
+    --darkgray: #5b5b5b;
 }
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    background-color: var(--nav);
-    font-weight: 500;
-    padding: 0;
 
-}
-#header-logo {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    left: 1rem; 
-    max-width: 5rem;
-}
-.nav__menu-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 4rem;
-    font-size: 0.8rem;
-    width: 50%;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: var(--black);
-}
-.header-button {
-    display: flex;
-    justify-content: space-between;
-}
-.register {
-    font-size: 0.8rem;
-    display: block;
-    padding: 2px 20px;
-}
+
+
 .carousel {
     position: relative;
     height: 50%;
@@ -68,13 +36,138 @@ a {
 .main-section-product {
     display: flex;
     justify-content: space-around;
+    text-align: center;
 }
+.img-1 {
+    background-image: url(./img/shirt1.jpg);
+}
+/* doi? sang hinh sau */
+.img-1:hover {
+    background-image: url(./img/shirt1b.jpg);
+}
+.img-2 {
+    background-image: url(./img/shirt2.jpg);
+}
+/* doi? sang hinh sau */
+.img-2:hover {
+    background-image: url(./img/shirt2b.jpg);
+}
+.img-3 {
+    background-image: url(./img/shirt3.jpg);
+}
+/* doi? sang hinh sau */
+.img-3:hover {
+    background-image: url(./img/shirt3b.jpg);
+}
+.img-4 {
+    background-image: url(./img/shirt4.jpg);
+}
+/* doi? sang hinh sau */
+.img-4:hover {
+    background-image: url(./img/shirt4b.jpg);
+}
+.img-5 {
+    background-image: url(./img/outwear1.jpg);
+}
+.img-5:hover {
+    background-image: url(./img/outwear1b.jpg);
+}
+.img-6 {
+    background-image: url(./img/shirt4.jpg);
+}
+.img-6:hover {
+    background-image: url(./img/shirt4b.jpg);
+}
+.img-7 {
+    background-image: url(./img/outwear3.jpg);
+}
+.img-7:hover {
+    background-image: url(./img/outwear3b.jpg);
+}
+.img-8 {
+    background-image: url(./img/outwear4a.jpg);
+}
+.img-8:hover {
+    background-image: url(./img/outwear4b.jpg);
+}
+.img-9 {
+    background-image: url(./img/shirt4.jpg);
+}
+.img-9:hover {
+    background-image: url(./img/shirt4b.jpg);
+}
+.img-10 {
+    background-image: url(./img/bot1.jpg);
+}
+.img-10:hover {
+    background-image: url(./img/bot1b.jpg);
+}
+.img-11 {
+    background-image: url(./img/bot2.jpg);
+}
+.img-11:hover {
+    background-image: url(./img/bot2b.jpg);
+}
+.img-12 {
+    background-image: url(./img/bot3.jpg);
+}
+.img-12:hover {
+    background-image: url(./img/bot3b.jpg);
+}
+.img-13 {
+    background-image: url(./img/shirt4.jpg);
+}
+.img-13:hover {
+    background-image: url(./img/shirt4b.jpg);
+}
+.img-14 {
+    background-image: url(./img/acc2.jpg);
+}
+.img-14:hover {
+    background-image: url(./img/acc2b.jpg);
+}
+.img-15 {
+    background-image: url(./img/acc3.jpg);
+}
+.img-15:hover {
+    background-image: url(./img/acc3b.jpg);
+}
+.img-16 {
+    background-image: url(./img/acc4.jpg);
+}
+.img-16:hover {
+    background-image: url(./img/acc4b.jpg);
+}
+
 .shirt-img {
     width: 13rem;
+    height: 15rem;
+    background-size: contain;
     margin-top: 2rem;
+    background-repeat: no-repeat;
+    transition: all 0.2s;
 }
-.products > a {
+.product-sale {
+    position: relative;
+}
+.sale-box {
+    color: var(--white);
+    background-color: var(--red);
+    padding: 3px 15px;
+    position: absolute;
+    top: 15px;
+    left: 0;;
+}
 
+
+.products > div > a {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.products > div > p {
+    color: #f40000;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
 .btn-light {
     display: block;
@@ -94,7 +187,6 @@ a {
     display: block;
     margin: 0 auto;
     width: 96%;
-    height: 25rem;
 }
 .service {
     display: block;
@@ -107,6 +199,12 @@ a {
 }
 .introduction-container {
     padding: 2rem 12rem 1rem;
+}
+@media (max-width: 577px) {
+    .introduction-container {
+        padding: 0rem 5rem 1rem;
+
+    }
 }
 .introduction-title {
     color: tomato;
@@ -125,6 +223,7 @@ a {
     color: white;
     font-size: 0.7rem;
     background-color: var(--black);
+    justify-content: center;
 }
 .footer-menu h6 {
     color: tomato;
@@ -140,8 +239,8 @@ a {
 .foot-menu-logo {
 }
 .foot-menu-logo img {
-    width: 5rem;
-    height: 2rem;
+    height: 3rem;
+    /* magic!!! */
 }
 .footer-chinh-sach {
     padding: 3rem 3rem 0 2rem;
@@ -188,12 +287,37 @@ a {
 }
 .footer-address p {
     margin: 0;
+    color: var(--bg);
 }
 .footer-copyright {
-    background-color: var(--bg);
+    background-color: var(--darkgray);
     color: var(--white);
     padding-top: 0.6rem;
     padding-left: 0.8rem;
     height: 2.5rem;
     font-size: 0.8rem;
+    font-weight: 500;
+}
+@media (max-width: 577px) {
+.foot-menu-logo {
+        padding: 2rem 0 0 1rem;
+}
+.footer-chinh-sach {
+        padding: 2rem 0 0 0;
+}
+.footer-chinh-sach-item {
+        padding: 1rem;
+}
+.footer-cong-dong {
+    padding: 2rem 1rem ;
+}
+.footer-huong-dan {
+    padding: 2rem 1rem 0 0;
+}
+.foot-menu-info {
+    margin: 0;
+}
+.foot-menu-info > p {
+    padding: 0;
+}
 }
