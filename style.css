@@ -41,28 +41,24 @@
 .img-1 {
     background-image: url(./img/shirt1.jpg);
 }
-/* doi? sang hinh sau */
 .img-1:hover {
     background-image: url(./img/shirt1b.jpg);
 }
 .img-2 {
     background-image: url(./img/shirt2.jpg);
 }
-/* doi? sang hinh sau */
 .img-2:hover {
     background-image: url(./img/shirt2b.jpg);
 }
 .img-3 {
     background-image: url(./img/shirt3.jpg);
 }
-/* doi? sang hinh sau */
 .img-3:hover {
     background-image: url(./img/shirt3b.jpg);
 }
 .img-4 {
     background-image: url(./img/shirt4.jpg);
 }
-/* doi? sang hinh sau */
 .img-4:hover {
     background-image: url(./img/shirt4b.jpg);
 }
@@ -237,7 +233,6 @@
 }
 .foot-menu-logo img {
     height: 3rem;
-    /* magic!!! */
 }
 .footer-chinh-sach {
     padding: 3rem 3rem 0 2rem;
