@@ -138,7 +138,6 @@
 .img-16:hover {
     background-image: url(./img/acc4b.jpg);
 }
-
 .shirt-img {
     width: 13rem;
     height: 15rem;
@@ -158,8 +157,6 @@
     top: 15px;
     left: 0;;
 }
-
-
 .products > div > a {
     font-size: 0.8rem;
     font-weight: 500;
