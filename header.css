@@ -8,7 +8,10 @@ nav {
     padding: 0;
 
 }
-.mobile-element {
+.mobile-left-element {
+    display: none;
+}
+.mobile-right-element {
     display: none;
 }
 #header-logo {
@@ -36,12 +39,19 @@ nav {
     justify-content: space-between;
     position: relative;
 }
-.fa-shopping-cart {
-    background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
+.mobile-left-element, .mobile-right-element {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+    font-size: 25px;
+}
+.mobile-left-element {
+    margin-right: 12rem;
+    padding-bottom: 1rem;
+}
+.mobile-right-element {
+    margin-left: 12rem;
+    padding-bottom: 1rem;
 }
 }
 .nav__menu-main {
