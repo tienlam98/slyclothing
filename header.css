@@ -26,13 +26,23 @@ nav {
     margin-bottom: 0;
 }
 @media (max-width: 577px) {
+    .nav {
+        justify-content: center;
+    }
     .nav__menu-main {
         display: none;
     }
     .main-section-product {
         flex-wrap: wrap;
     }
-    
+    .nav__icon {
+        display: none;
+    }
+    #header-logo {
+        position: relative;
+        top: 0;
+        left: 0;
+    }
 }
 .nav__menu-main li a {
     padding: 10px 20px;
@@ -50,9 +60,7 @@ a {
 
 .header-button {
     display: flex;
-    justify-content: space-between;
-    
-    
+    justify-content: space-between;    
 }
 .register:hover {
     color: var(--white);
