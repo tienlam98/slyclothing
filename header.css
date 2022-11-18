@@ -8,12 +8,41 @@ nav {
     padding: 0;
 
 }
+.mobile-element {
+    display: none;
+}
 #header-logo {
     display: block;
     position: absolute;
     top: 1rem;
     left: 1rem; 
     max-width: 5rem;
+}
+@media (max-width: 577px) {
+#header-logo {
+    display: block;
+    margin: auto;
+    top: 1rem;
+    left: -140%; 
+    height: 3rem;
+    color: transparent;
+    position: absolute;
+    }
+.carousel {
+    position: relative;
+}
+.mobile-element {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.fa-shopping-cart {
+    background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
 }
 .nav__menu-main {
     display: flex;
